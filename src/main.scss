@@ -1,7 +1,10 @@
-@import 'modules/nav/nav';
+@import 'styles/fonts';
 @import 'styles/sprite';
+@import 'styles/variable';
+@import 'styles/mixin';
 
+@import 'styles/markup';
+@import 'styles/body';
 
-.oo {
-	@include sprite($sprite-prev);
-}
+@import 'modules/nav/nav';
+@import 'modules/carousel/carousel';
