@@ -9,11 +9,12 @@
     "gulp-postcss": "^6.1.0",
     "gulp-rigger": "^0.5.8",
     "gulp-sass": "^2.0.4",
+    "gulp-watch": "^4.3.5",
     "gulp.spritesmith": "^4.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/igor0ser/igor0ser.github.io.git"
+    "url": "git+https://github.com/igor0ser/bigmir2.git"
   },
   "license": "ISC"
 }

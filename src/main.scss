@@ -1,0 +1,7 @@
+@import 'modules/nav/nav';
+@import 'styles/sprite';
+
+
+.oo {
+	@include sprite($sprite-prev);
+}
