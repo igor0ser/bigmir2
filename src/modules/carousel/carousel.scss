@@ -52,9 +52,15 @@
 
 		&__pages {
 			float: left;
+			margin-right: 5px;
+			margin-left: 5px;
+			font-style: 40px;
 
 			&:after{
 				@include sprite($sprite-clock);
+				content: '';
+				display: inline-block;
+				vertical-align: middle;
 			}
 		}
 
