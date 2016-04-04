@@ -1,0 +1,43 @@
+.main-news {
+	margin-top: 30px;
+
+	&__hr {
+		height: 18px;
+		border-bottom: 2px solid black;
+	}
+
+	&__header {
+		font-size: 24px;
+		background: #fff;
+		width: 120px;
+		margin-top: -23px;
+		margin-bottom: 1px;
+	}
+
+	&__article {
+		display: inline-block;
+		margin-right: 17px;
+		width: 142px;
+		height: 190px;
+		vertical-align: top;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&__photo {
+			width: 100%;
+			margin-bottom: -2px;
+		}
+
+		&-with-photo &__header:after{
+			
+		}
+	}
+
+
+
+
+
+
+}

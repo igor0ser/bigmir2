@@ -4,6 +4,7 @@
 	background: #f7f9fa;
 	overflow: hidden;
 	border-bottom: 5px solid $border-color;
+	position: relative;
 	
 	&__img {
 		width: 377px;
@@ -22,7 +23,7 @@
 	&__header {
 		font-size: 30px;
 		font-family: "PT Serif";
-		line-height: 1.2;
+		line-height: 1.23;
 		color: $border-color;
 	}
 
@@ -32,10 +33,9 @@
 	}
 
 	&__nav {
-		@include clearfix;
-		float: right;
-		margin-right: 15px;
-		background: gold;
+		position: absolute;
+		bottom: 12px;
+		right: 11px;
 
 		&__prev,
 		&__next {
@@ -52,15 +52,17 @@
 
 		&__pages {
 			float: left;
-			margin-right: 5px;
-			margin-left: 5px;
-			font-style: 40px;
+			margin-right: 12px;
+			margin-left: 12px;
+			font-size: 18px;
+			font-weight: bold;
 
 			&:after{
 				@include sprite($sprite-clock);
 				content: '';
 				display: inline-block;
 				vertical-align: middle;
+				margin-left: 7px;
 			}
 		}
 

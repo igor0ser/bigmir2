@@ -32,18 +32,18 @@ var path = {
 gulp.task('default', ['spr', 'html', 'css', 'img', 'watch'], () => gulp.start('open'));
 
 gulp.task('html', function () {
-	gulp.src(path.src.html)
-		.pipe(rigger())
-		.pipe(gulp.dest(path.build.root));
+	return gulp.src(path.src.html)
+			.pipe(rigger())
+			.pipe(gulp.dest(path.build.root));
 });
 
 gulp.task('css', () => {
-	gulp.src(path.src.scss)
-		.pipe(sass().on('error', sass.logError))
-		.pipe(postcss([autoprefixer({
-			browsers: 'last 2 versions, ie 8-11'
-		})]))
-		.pipe(gulp.dest(path.build.root));
+	return gulp.src(path.src.scss)
+			.pipe(sass().on('error', sass.logError))
+			.pipe(postcss([autoprefixer({
+				browsers: 'last 2 versions, ie 8-11'
+			})]))
+			.pipe(gulp.dest(path.build.root));
 });
 
 gulp.task('spr', () => {
@@ -54,16 +54,18 @@ gulp.task('spr', () => {
 				cssName: 'sprite.scss',
 				cssFormat: 'scss',
 				algorithm: 'top-down',
+				padding: 2,
 				cssVarMap: function (sprite) {sprite.name = 'sprite_' + sprite.name;}
 			}));
 	spriteData.img.pipe(gulp.dest(path.build.root)); 
 	spriteData.css.pipe(gulp.dest(path.src.styles)); 
 	gulp.start('css');
+	return spriteData;
 });
 
 gulp.task('img', () => {
-	gulp.src(path.src.img)
-		.pipe(gulp.dest(path.build.img));
+	return gulp.src(path.src.img)
+			.pipe(gulp.dest(path.build.img));
 });
 
 gulp.task('watch', () => {
@@ -86,6 +88,6 @@ gulp.task('open', () => {
 		app: 'chrome',
 		uri: path.build.html
 	};
-	gulp.src('').pipe(open(options));
+	return gulp.src('').pipe(open(options));
 });
 

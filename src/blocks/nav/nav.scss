@@ -1,0 +1,18 @@
+.nav {
+	@include list-style-none;
+	line-height: 30px;
+	font-size: 18px;
+	background: #d7d8d9;
+	display: block;
+
+
+	&__item {
+		display: inline-block;
+		padding: 0 14px;
+
+		&-active {
+			background: $text-color;
+			color: #fff;
+		}
+	}
+}
