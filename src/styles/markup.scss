@@ -1,13 +1,19 @@
 .container {
+	@include clearfix;
 	width: 940px;
 	margin: 32px auto 68px;
-	@include clearfix;
 }
 
 .left {
+	@include clearfix;
+
 	width: 620px;
 	float: left;
 	margin-right: 20px;
+
+	.left{
+		width: 380px;
+	}
 }
 
 .right {

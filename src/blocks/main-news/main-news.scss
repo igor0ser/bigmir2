@@ -1,25 +1,27 @@
 .main-news {
-	margin-top: 30px;
-
-	&__hr {
-		height: 18px;
-		border-bottom: 2px solid black;
-	}
+	margin-top: 24px;
 
 	&__header {
-		font-size: 24px;
-		background: #fff;
-		width: 120px;
-		margin-top: -23px;
-		margin-bottom: 1px;
+		border-bottom: 2px solid black;
+		margin-bottom: 10px;
+		height: 23px;
+
+		&__text {
+			font-size: 24px;
+			margin-bottom: -10px;
+			padding-right: 8px;
+			background: #fff;
+			display: inline-block;
+		}
 	}
 
 	&__article {
 		display: inline-block;
-		margin-right: 17px;
-		width: 142px;
+		margin-right: 2.8%;
+		width: 22.9%;
 		height: 190px;
 		vertical-align: top;
+		hyphens: auto;
 
 		&:last-child {
 			margin-right: 0;
