@@ -1,0 +1,22 @@
+.gallery {
+
+	&__item {
+		display: block;
+		margin-bottom: 19px;
+
+		&__photo {
+			width: 100%;
+			height: auto;
+			margin-bottom: -3px;
+		}
+
+		&__text {
+			font-size: 18px;
+			font-weight: bold;
+			line-height: 1.111;
+
+		}
+
+	}
+
+}
