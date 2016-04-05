@@ -7,16 +7,23 @@
 .left {
 	@include clearfix;
 
-	width: 620px;
+	width: 65.9574%;
 	float: left;
-	margin-right: 20px;
+	margin-right: 2.1277%;
 
-	.left{
-		width: 380px;
+	.left {
+		width: 61.2903%;
+		margin-right: 3.2258%;
+	}
+
+	.right {
+		width: 35.4839%;
+		background: gold;
 	}
 }
 
 .right {
-	width: 300px;
+	width: 31.9149%;
 	float: left;
+	height: 400px;
 }

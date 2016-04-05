@@ -8,6 +8,7 @@ var autoprefixer = require('autoprefixer');
 var spritesmith = require('gulp.spritesmith');
 var watch= require('gulp-watch');
 var open = require('gulp-open');
+var clean = require('gulp-clean');
 
 var path = {
 	src: {
@@ -91,3 +92,7 @@ gulp.task('open', () => {
 	return gulp.src('').pipe(open(options));
 });
 
+gulp.task('clean', function () {
+	return gulp.src(path.build.root, {read: false})
+		.pipe(clean());
+});
