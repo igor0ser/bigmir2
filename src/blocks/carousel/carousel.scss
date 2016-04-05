@@ -59,9 +59,7 @@
 
 			&:after{
 				@include sprite($sprite-clock);
-				content: '';
-				display: inline-block;
-				vertical-align: middle;
+				@include after-ib;
 				margin-left: 7px;
 			}
 		}

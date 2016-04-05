@@ -2,7 +2,7 @@
 	margin-top: 24px;
 
 	&__header {
-		border-bottom: 2px solid black;
+		border-bottom: 2px solid $text-color;
 		margin-bottom: 10px;
 		height: 23px;
 
@@ -12,6 +12,7 @@
 			padding-right: 8px;
 			background: #fff;
 			display: inline-block;
+			color: $text-color;
 		}
 	}
 
@@ -19,7 +20,7 @@
 		display: inline-block;
 		margin-right: 2.8%;
 		width: 22.9%;
-		height: 190px;
+		height: 200px;
 		vertical-align: top;
 		hyphens: auto;
 
@@ -33,7 +34,10 @@
 		}
 
 		&-with-photo &__header:after{
-			
+			@include sprite($sprite-photo);
+			@include after-ib;
+			margin-left: 7px;
+			vertical-align: baseline;
 		}
 	}
 

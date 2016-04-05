@@ -13,6 +13,11 @@ a {
 	color: inherit;
 	text-decoration: none;
 	cursor: pointer;
+
+	&:hover {
+		color: $header-color;
+		text-decoration: underline;
+	}
 }
 
 h2 {
@@ -29,5 +34,6 @@ button {
 	background: none;
 	border: none;
 	cursor: pointer;
+	outline: none;
 }
 

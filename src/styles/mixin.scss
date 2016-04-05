@@ -17,7 +17,8 @@
 	margin: 0;
 }
 
-@mixin after-block {
-	display: block;
+@mixin after-ib {
+	display: inline-block;
 	content: '';
+	vertical-align: middle;
 }
