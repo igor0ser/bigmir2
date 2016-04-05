@@ -1,5 +1,5 @@
 .news {
-	margin-top: 6px;
+	margin-top: 18px;
 
 	&__header {
 		border-bottom: 2px solid $border-color;
@@ -17,26 +17,22 @@
 	}
 
 	&__list {
-		padding-left: 16px;
-		margin-top: -3px;
+		@include list-style-none;
 	}
 
 	&__item {
-		margin-top: 8px;
-
-		&__text{
-			margin-left: -5px;
-			line-height: 1.2;
-		}
+		margin-top: 10px;
+		padding-left: 10px; 
+		background: url(images/bullet.png) top left no-repeat;
+		line-height: 1.2;
 
 		&-with-photo:after {
-			@include sprite($sprite-video);
+			@include sprite($sprite-photo);
 			@include after-ib;
-
 		}
 
 		&-with-video &__text:after {
-			@include sprite($sprite-photo);
+			@include sprite($sprite-video);
 			@include after-ib;
 		}
 
@@ -49,8 +45,35 @@
 			color: #bfbfc0;
 		}
 
-		&-strong {
-			list-style: none;
+		&__photo {
+			float: left;
+			width: 100px;
+			height: 55px;
+			margin-right: 7px;
 		}
+
+		&-strong {
+			background: none;
+			padding-left: 0;
+			height: 55px;
+			margin-bottom: 2px;
+		}
+		&-strong &__text{
+			font-weight: bold;
+			line-height: 1.7;
+	}
 	}
 }
+.Zlatan_Ibrahimovic_on_target_as_Sweden_qualify_ {
+  font-size: 14px;
+  font-family: "PT Sans";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: left;
+  position: absolute;
+  left: 335.888px;
+  top: 974.7px;
+  z-index: 97;
+}
+
