@@ -1,0 +1,50 @@
+.video {
+	&__header {
+		border-bottom: 2px solid $text-color;
+		margin-bottom: 20px;
+		margin-top: 2px;
+		text-align: center;
+		height: 12px;
+
+		&__text {
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: -20px;
+			padding: 0 5px;
+			color: #6a0099;
+			text-align: center;
+			background: #fff;
+		}
+	}
+
+	&__item {
+		@include clearfix;
+		display: block;
+		margin-bottom: 11px;
+		position: relative;
+
+/* 		&:after{
+	@include after-bl;
+	@include sprite($sprite-play-purple);
+} */
+
+		&__image {
+			display: block;
+			float: left;
+			width: 46%;
+			height: auto;
+			margin-right: 3.3333%;
+		}
+
+		&__text {
+			float: left;
+			margin-top: -2px;
+			padding-left: 2px;
+			width: 50.6667%;
+			font-weight: bold;
+			line-height: 1.429;
+		}
+	}
+}

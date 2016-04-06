@@ -22,3 +22,9 @@
 	content: '';
 	vertical-align: middle;
 }
+
+@mixin after-bl {
+	display: block;
+	content: '';
+	position: absolute;
+}
