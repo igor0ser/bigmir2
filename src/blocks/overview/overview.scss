@@ -60,6 +60,10 @@
 			text-decoration: none;
 		}
 
+		&:hover &__text{
+			text-decoration: underline;
+		}
+
 		&__category {
 			color: $border-color;
 		}
