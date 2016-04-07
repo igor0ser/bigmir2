@@ -12,11 +12,18 @@ To run builder:
 
 
 Task:
+
 Evaluation Criteria:
+
+1.  Bird
+1.  McHale
+1.  Parish
+
 1.  Correct visual page rendering according to PSD source, using best practices and semantic rules.
 2.  Requirements above + correct BEM + correct adaptivity.
 3.  Requirements above + PostCSS and its plugins usage
 4.  Well... Surprise me with something (smile)
+
 Mandatory requirements:
   * Using BEM methodology and its file structure.
   * Using one of CSS preprocessors, mentees can choose. 
