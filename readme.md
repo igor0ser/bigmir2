@@ -20,8 +20,8 @@ Evaluation Criteria:
 4. Well... Surprise me with something (smile)
 
 Mandatory requirements:
-1. Using BEM methodology and its file structure.
-2. Using one of CSS preprocessors, mentees can choose. 
-3. Best practices.
-4. Support adaptivity for two different breakpoints (for example, 1024 and 768).
-5. Progressive enhancement & graceful degradation.
+  * Using BEM methodology and its file structure.
+  * Using one of CSS preprocessors, mentees can choose. 
+  * Best practices.
+  * Support adaptivity for two different breakpoints (for example, 1024 and 768).
+  * Progressive enhancement & graceful degradation.

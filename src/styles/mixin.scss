@@ -1,30 +1,38 @@
 @mixin clearfix {
 	*zoom: 1;
+
 	&:before,
 	&:after {
-		display: table;
-		content: "";
 		line-height: 0;
+
+		display: table;
+
+		content: '';
 	}
+
 	&:after {
 		clear: both;
 	}
 }
 
 @mixin list-style-none {
-	list-style: none;
-	padding: 0;
 	margin: 0;
+	padding: 0;
+
+	list-style: none;
 }
 
 @mixin after-ib {
 	display: inline-block;
+
 	content: '';
 	vertical-align: middle;
 }
 
 @mixin after-bl {
-	display: block;
-	content: '';
 	position: absolute;
+
+	display: block;
+
+	content: '';
 }

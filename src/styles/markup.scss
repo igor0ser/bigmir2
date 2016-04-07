@@ -1,7 +1,12 @@
 .container {
 	@include clearfix;
+
 	width: 940px;
 	margin: 32px auto 68px;
+
+	@include media('<desktop') {
+		width: 750px;
+	}
 }
 
 .top {
@@ -11,9 +16,15 @@
 .left {
 	@include clearfix;
 
-	width: 65.9574%;
 	float: left;
+
+	width: 65.9574%;
 	margin-right: 2.1277%;
+
+	@include media('<desktop') {
+		width: 100%;
+	}
+
 
 	.left {
 		width: 61.2903%;
@@ -26,6 +37,12 @@
 }
 
 .right {
-	width: 31.9149%;
 	float: left;
+
+	width: 31.9149%;
+
+	@include media('<desktop') {
+		width: 100%;
+	}
+
 }

@@ -3,9 +3,11 @@
 
 	&__article {
 		display: inline-block;
-		margin-right: 2.8%;
+
 		width: 22.9%;
 		height: 210px;
+		margin-right: 2.8%;
+
 		vertical-align: top;
 		hyphens: auto;
 
@@ -19,17 +21,13 @@
 			margin-bottom: -2px;
 		}
 
-		&-with-photo &__header:after{
+		&-with-photo &__header:after {
 			@include sprite($sprite-photo);
 			@include after-ib;
+
 			margin-left: 7px;
+
 			vertical-align: baseline;
 		}
 	}
-
-
-
-
-
-
 }

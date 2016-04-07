@@ -1,29 +1,39 @@
 .articles {
-	border-bottom: 5px solid $text-color;
 	margin-top: 45px;
 	padding-bottom: 23px;
+
+	border-bottom: 5px solid $text-color;
+
+	@include media('<desktop') {
+		width: 45%;
+		float: left;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+
 
 	&__header {
 		font-size: 24px;
 
 		display: block;
 
-		border-bottom: 2px solid $text-color;
 		margin-bottom: -9px;
 
+		border-bottom: 2px solid $text-color;
 	}
 
 	&__item {
 		@include clearfix;
-		margin-top: 19px;
 
 		display: block;
 
+		margin-top: 19px;
+
 		&__photo {
+			bottom: 1px solid #bfbfc0;
+
 			display: block;
 			float: left;
-
-			bottom: 1px solid #bfbfc0;
 
 			width: 34%;
 			height: auto;

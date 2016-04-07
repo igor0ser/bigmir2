@@ -1,61 +1,89 @@
 .video {
-	&__header {
-		border-bottom: 2px solid $text-color;
+
+	@include media('<desktop') {
+		float: left;
+
+		width: 45%;
+		margin-right: 10%;
 		margin-bottom: 20px;
-		margin-top: 2px;
-		text-align: center;
+	}
+
+
+
+
+	&__header {
 		height: 12px;
+		margin-top: 2px;
+		margin-bottom: 20px;
+
+		text-align: center;
+
+		border-bottom: 2px solid $text-color;
 
 		&__text {
-			display: inline-block;
-			text-transform: uppercase;
 			font-size: 18px;
 			font-weight: bold;
+
+			display: inline-block;
+
 			margin-bottom: -20px;
 			padding: 0 5px;
-			color: #6a0099;
+
 			text-align: center;
+			text-transform: uppercase;
+
+			color: #6a0099;
 			background: #fff;
 		}
 	}
 
 	&__item {
 		@include clearfix;
-		display: block;
-		margin-bottom: 11px;
+
 		position: relative;
 
-		&:before{
-			@include after-bl;
-			@include sprite($sprite-play-purple);
-			bottom: 3px;
-			left: 4px;
-		}
+		display: block;
 
+		margin-bottom: 11px;
 
 		&__image {
-			display: block;
 			float: left;
+
 			width: 46%;
+			display: block;
 			height: auto;
 			margin-right: 3.3333%;
 		}
 
+		&:before {
+			@include after-bl;
+			@include sprite($sprite-play-purple);
+
+			bottom: 3px;
+		}
+
+
+
 		&__text {
-			float: left;
-			margin-top: -2px;
-			padding-left: 2px;
-			width: 50.6667%;
 			font-weight: bold;
 			line-height: 1.429;
+
+			float: left;
+
+			width: 50.6667%;
+			margin-top: -2px;
+			padding-left: 2px;
 		}
 	}
 
 	&__see-more {
-		color: $header-color;
 		font-size: 18px;
-		margin-top: 12px;
+
 		display: inline-block;
+
+		margin-top: 12px;
+
+		color: $header-color;
 
 		&:after {
 			@include after-ib;
@@ -64,8 +92,8 @@
 	}
 
 	&__footer {
-		border-bottom: 5px solid $text-color;
 		margin-top: 4px;
-	}
 
+		border-bottom: 5px solid $text-color;
+	}
 }

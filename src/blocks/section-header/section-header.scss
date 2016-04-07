@@ -1,21 +1,25 @@
 .section-header {
-	border-bottom: 2px solid $text-color;
-	margin-bottom: 10px;
 	height: 23px;
+	margin-bottom: 10px;
+
+	border-bottom: 2px solid $text-color;
 
 	&__text {
 		font-size: 24px;
+
+		display: inline-block;
+
 		margin-bottom: -10px;
 		padding-right: 8px;
-		background: #fff;
-		display: inline-block;
+
 		color: $text-color;
+		background: #fff;
 	}
 
 	&-with-color {
 		border-color: $border-color;
 	}
-	
+
 	&-with-color &__text {
 		color: $header-color;
 	}

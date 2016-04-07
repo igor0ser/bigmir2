@@ -1,52 +1,57 @@
 .overview {
-	margin-top: 6px;
 	overflow: hidden;
+
+	margin-top: 6px;
 	padding-bottom: 10px;
+
 	border-bottom: 2px solid $text-color;
 
 	&__slider {
 		position: relative;
-		padding-left: 80px;
+
 		overflow: hidden;
+
+		padding-left: 80px;
 
 		&__button {
 			position: absolute;
+			top: 0;
+			right: 0;
+
 			width: 60px;
 			height: 100%;
-			/* background: linear-gradient(to right, #fff, rgba(255,255,255,0.5)); */
-			background: rgba(255, 255, 255, 0.8);
-			right: 0;
-			top: 0;
+
+			background: rgba(255, 255, 255, .8);
 
 			&:after {
 				@include after-bl;
 				@include sprite($sprite-next-big);
+
 				top: 42%;
 				left: 50%;
+
 				margin-top: -$sprite-next-big-height/2;
 				margin-left: -$sprite-next-big-width/2;
 			}
 
-			&-prev{
+			&-prev {
 				left: 0;
 			}
 
-			&-prev:after{
+			&-prev:after {
 				@include sprite-position($sprite-prev-big);
 			}
 		}
 
-		&__container{
-			@include clearfix;
-			width: 2000px;
+		&__container {
+			width: 5000px;
 		}
 	}
-
-
 
 	&__item {
 		display: block;
 		float: left;
+
 		width: 140px;
 		height: 180px;
 		margin-right: 20px;
@@ -57,6 +62,7 @@
 
 		&__photo {
 			display: block;
+
 			margin-top: 5px;
 			margin-bottom: 3px;
 		}
@@ -65,6 +71,4 @@
 			color: $header-color;
 		}
 	}
-
-
 }

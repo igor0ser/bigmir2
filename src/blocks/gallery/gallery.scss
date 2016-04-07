@@ -2,14 +2,16 @@
 
 	&__item {
 		display: block;
+
 		margin-bottom: 19px;
 
-		&__photo-wrapper{
+		&__photo-wrapper {
 			position: relative;
 
-			&:before{
+			&:before {
 				@include after-bl;
 				@include sprite($sprite-photo-red);
+
 				bottom: 8px;
 				left: 8px;
 			}
@@ -26,7 +28,5 @@
 			font-weight: bold;
 			line-height: 1.111;
 		}
-
 	}
-
 }

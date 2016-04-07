@@ -1,41 +1,49 @@
 .slider {
 	@include clearfix;
-	margin-top: 22px;
-	background: #f7f9fa;
-	overflow: hidden;
-	border-bottom: 5px solid $border-color;
+
 	position: relative;
-	
+
+	overflow: hidden;
+
+	margin-top: 22px;
+
+	border-bottom: 5px solid $border-color;
+	background: #f7f9fa;
+
 	&__img {
+		float: left;
+
 		width: 60.8%;
 		height: auto;
-		float: left;
 	}
 
 	&__content {
+		float: left;
+
 		width: 35.48%;
 		height: 210px;
 		margin-left: 3.5484%;
-		float: left;
 		padding: 5px 25px 0 0;
 	}
 
 	&__header {
+		font-family: 'PT Serif';
 		font-size: 30px;
-		font-family: "PT Serif";
 		line-height: 1.23;
+
 		color: $border-color;
 	}
 
 	&__text {
 		line-height: 1.286;
+
 		margin-top: 10px;
 	}
 
 	&__nav {
 		position: absolute;
-		bottom: 12px;
 		right: 11px;
+		bottom: 12px;
 
 		&__prev,
 		&__next {
@@ -51,22 +59,20 @@
 		}
 
 		&__pages {
-			float: left;
-			margin-right: 12px;
-			margin-left: 12px;
 			font-size: 18px;
 			font-weight: bold;
 
-			&:after{
+			float: left;
+
+			margin-right: 12px;
+			margin-left: 12px;
+
+			&:after {
 				@include sprite($sprite-clock);
 				@include after-ib;
+
 				margin-left: 7px;
 			}
 		}
-
 	}
-
-
 }
-
-
