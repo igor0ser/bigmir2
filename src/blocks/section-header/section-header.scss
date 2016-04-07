@@ -1,0 +1,22 @@
+.section-header {
+	border-bottom: 2px solid $text-color;
+	margin-bottom: 10px;
+	height: 23px;
+
+	&__text {
+		font-size: 24px;
+		margin-bottom: -10px;
+		padding-right: 8px;
+		background: #fff;
+		display: inline-block;
+		color: $text-color;
+	}
+
+	&-with-color {
+		border-color: $border-color;
+	}
+	
+	&-with-color &__text {
+		color: $header-color;
+	}
+}

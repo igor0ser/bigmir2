@@ -4,6 +4,10 @@
 	margin: 32px auto 68px;
 }
 
+.top {
+	@include clearfix;
+}
+
 .left {
 	@include clearfix;
 

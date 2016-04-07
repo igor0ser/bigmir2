@@ -25,10 +25,13 @@
 		margin-bottom: 11px;
 		position: relative;
 
-/* 		&:after{
-	@include after-bl;
-	@include sprite($sprite-play-purple);
-} */
+		&:before{
+			@include after-bl;
+			@include sprite($sprite-play-purple);
+			bottom: 3px;
+			left: 4px;
+		}
+
 
 		&__image {
 			display: block;
@@ -47,4 +50,22 @@
 			line-height: 1.429;
 		}
 	}
+
+	&__see-more {
+		color: $header-color;
+		font-size: 18px;
+		margin-top: 12px;
+		display: inline-block;
+
+		&:after {
+			@include after-ib;
+			@include sprite($sprite-see-more);
+		}
+	}
+
+	&__footer {
+		border-bottom: 5px solid $text-color;
+		margin-top: 4px;
+	}
+
 }

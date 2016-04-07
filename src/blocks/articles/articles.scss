@@ -1,0 +1,48 @@
+.articles {
+	border-bottom: 5px solid $text-color;
+	margin-top: 45px;
+	padding-bottom: 23px;
+
+	&__header {
+		font-size: 24px;
+
+		display: block;
+
+		border-bottom: 2px solid $text-color;
+		margin-bottom: -9px;
+
+	}
+
+	&__item {
+		@include clearfix;
+		margin-top: 19px;
+
+		display: block;
+
+		&__photo {
+			display: block;
+			float: left;
+
+			bottom: 1px solid #bfbfc0;
+
+			width: 34%;
+			height: auto;
+			margin-right: 3%;
+		}
+
+		&__text {
+			font-size: 18px;
+			line-height: 1.111;
+
+			float: left;
+
+			width: 63%;
+			margin-top: 0;
+		}
+
+		&-with-photo &__text:after {
+			@include after-ib;
+			@include sprite($sprite-photo);
+		}
+	}
+}
