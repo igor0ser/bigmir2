@@ -30,9 +30,9 @@ Mandatory requirements:
 
 What I have made for 4th point:
 --------------------------------
-  * Used gulp.spritesmith that creates one png-file from many and creates scss-file with mixins for all sprites
-  * Used gulp-rigger for building html file from blocks
-  * Used include-media for media queries
-  * Used CSS Comb for sorting selectors during coding
-  * Used attr() for creating after elements for links
-  
+  * Created almost pixel-perfect-markup.
+  * Used gulp.spritesmith that creates one png-file from many and creates scss-file with @mixins for all sprites.
+  * Used gulp-rigger for building html file from blocks.
+  * Used include-media for creating media queries.
+  * Used CSS Comb for sorting selectors during coding.
+  * Used attr() for content in pseudo-elements for links.
