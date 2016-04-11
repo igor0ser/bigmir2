@@ -21,7 +21,7 @@
 		border-bottom: 2px solid $text-color;
 
 		&__text {
-			font-size: 18px;
+			font-size: $big-fs;
 			font-weight: bold;
 
 			display: inline-block;
@@ -78,7 +78,7 @@
 	}
 
 	&__see-more {
-		font-size: 18px;
+		font-size: $big-fs;
 
 		display: inline-block;
 

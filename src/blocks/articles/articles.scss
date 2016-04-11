@@ -13,7 +13,7 @@
 
 
 	&__header {
-		font-size: 24px;
+		font-size: $header-fs;
 
 		display: block;
 
@@ -41,7 +41,7 @@
 		}
 
 		&__text {
-			font-size: 18px;
+			font-size: $big-fs;
 			line-height: 1.111;
 
 			float: left;
