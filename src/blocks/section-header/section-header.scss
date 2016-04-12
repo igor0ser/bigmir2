@@ -16,11 +16,11 @@
 		background: #fff;
 	}
 
-	&-with-color {
+	&--with-color {
 		border-color: $border-color;
 	}
 
-	&-with-color &__text {
+	&--with-color &__text {
 		color: $header-color;
 	}
 }

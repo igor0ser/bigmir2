@@ -34,7 +34,7 @@
 			margin-bottom: -2px;
 		}
 
-		&-with-photo &__header:after {
+		&--with-photo &__header:after {
 			@include sprite($sprite-photo);
 			@include after-ib;
 

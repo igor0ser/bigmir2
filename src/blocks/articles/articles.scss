@@ -50,7 +50,7 @@
 			margin-top: 0;
 		}
 
-		&-with-photo &__text:after {
+		&--with-photo &__text:after {
 			@include after-ib;
 			@include sprite($sprite-photo);
 		}
