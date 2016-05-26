@@ -1,4 +1,4 @@
-.nav {
+﻿.nav {
 	@include list-style-none;
 
 	font-size: $big-fs;
@@ -16,6 +16,13 @@
 		&--active {
 			color: #fff;
 			background: $text-color;
+		}
+	}
+
+	&__text{
+		&:hover{
+			text-decoration: none;
+			color: inherit;
 		}
 	}
 }

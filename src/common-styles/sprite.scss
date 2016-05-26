@@ -1,0 +1,180 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$sprite-clock-name: 'sprite_clock';
+$sprite-clock-x: 0px;
+$sprite-clock-y: 41px;
+$sprite-clock-offset-x: 0px;
+$sprite-clock-offset-y: -41px;
+$sprite-clock-width: 18px;
+$sprite-clock-height: 18px;
+$sprite-clock-total-width: 24px;
+$sprite-clock-total-height: 237px;
+$sprite-clock-image: 'sprite.png';
+$sprite-clock: (0px, 41px, 0px, -41px, 18px, 18px, 24px, 237px, 'sprite.png', 'sprite_clock', );
+$sprite-next-big-name: 'sprite_next-big';
+$sprite-next-big-x: 0px;
+$sprite-next-big-y: 155px;
+$sprite-next-big-offset-x: 0px;
+$sprite-next-big-offset-y: -155px;
+$sprite-next-big-width: 20px;
+$sprite-next-big-height: 40px;
+$sprite-next-big-total-width: 24px;
+$sprite-next-big-total-height: 237px;
+$sprite-next-big-image: 'sprite.png';
+$sprite-next-big: (0px, 155px, 0px, -155px, 20px, 40px, 24px, 237px, 'sprite.png', 'sprite_next-big', );
+$sprite-next-name: 'sprite_next';
+$sprite-next-x: 0px;
+$sprite-next-y: 103px;
+$sprite-next-offset-x: 0px;
+$sprite-next-offset-y: -103px;
+$sprite-next-width: 12px;
+$sprite-next-height: 24px;
+$sprite-next-total-width: 24px;
+$sprite-next-total-height: 237px;
+$sprite-next-image: 'sprite.png';
+$sprite-next: (0px, 103px, 0px, -103px, 12px, 24px, 24px, 237px, 'sprite.png', 'sprite_next', );
+$sprite-photo-red-name: 'sprite_photo-red';
+$sprite-photo-red-x: 0px;
+$sprite-photo-red-y: 61px;
+$sprite-photo-red-offset-x: 0px;
+$sprite-photo-red-offset-y: -61px;
+$sprite-photo-red-width: 24px;
+$sprite-photo-red-height: 19px;
+$sprite-photo-red-total-width: 24px;
+$sprite-photo-red-total-height: 237px;
+$sprite-photo-red-image: 'sprite.png';
+$sprite-photo-red: (0px, 61px, 0px, -61px, 24px, 19px, 24px, 237px, 'sprite.png', 'sprite_photo-red', );
+$sprite-photo-name: 'sprite_photo';
+$sprite-photo-x: 0px;
+$sprite-photo-y: 13px;
+$sprite-photo-offset-x: 0px;
+$sprite-photo-offset-y: -13px;
+$sprite-photo-width: 16px;
+$sprite-photo-height: 12px;
+$sprite-photo-total-width: 24px;
+$sprite-photo-total-height: 237px;
+$sprite-photo-image: 'sprite.png';
+$sprite-photo: (0px, 13px, 0px, -13px, 16px, 12px, 24px, 237px, 'sprite.png', 'sprite_photo', );
+$sprite-play-purple-name: 'sprite_play-purple';
+$sprite-play-purple-x: 0px;
+$sprite-play-purple-y: 82px;
+$sprite-play-purple-offset-x: 0px;
+$sprite-play-purple-offset-y: -82px;
+$sprite-play-purple-width: 24px;
+$sprite-play-purple-height: 19px;
+$sprite-play-purple-total-width: 24px;
+$sprite-play-purple-total-height: 237px;
+$sprite-play-purple-image: 'sprite.png';
+$sprite-play-purple: (0px, 82px, 0px, -82px, 24px, 19px, 24px, 237px, 'sprite.png', 'sprite_play-purple', );
+$sprite-prev-big-name: 'sprite_prev-big';
+$sprite-prev-big-x: 0px;
+$sprite-prev-big-y: 197px;
+$sprite-prev-big-offset-x: 0px;
+$sprite-prev-big-offset-y: -197px;
+$sprite-prev-big-width: 20px;
+$sprite-prev-big-height: 40px;
+$sprite-prev-big-total-width: 24px;
+$sprite-prev-big-total-height: 237px;
+$sprite-prev-big-image: 'sprite.png';
+$sprite-prev-big: (0px, 197px, 0px, -197px, 20px, 40px, 24px, 237px, 'sprite.png', 'sprite_prev-big', );
+$sprite-prev-name: 'sprite_prev';
+$sprite-prev-x: 0px;
+$sprite-prev-y: 129px;
+$sprite-prev-offset-x: 0px;
+$sprite-prev-offset-y: -129px;
+$sprite-prev-width: 12px;
+$sprite-prev-height: 24px;
+$sprite-prev-total-width: 24px;
+$sprite-prev-total-height: 237px;
+$sprite-prev-image: 'sprite.png';
+$sprite-prev: (0px, 129px, 0px, -129px, 12px, 24px, 24px, 237px, 'sprite.png', 'sprite_prev', );
+$sprite-see-more-name: 'sprite_see-more';
+$sprite-see-more-x: 0px;
+$sprite-see-more-y: 0px;
+$sprite-see-more-offset-x: 0px;
+$sprite-see-more-offset-y: 0px;
+$sprite-see-more-width: 11px;
+$sprite-see-more-height: 11px;
+$sprite-see-more-total-width: 24px;
+$sprite-see-more-total-height: 237px;
+$sprite-see-more-image: 'sprite.png';
+$sprite-see-more: (0px, 0px, 0px, 0px, 11px, 11px, 24px, 237px, 'sprite.png', 'sprite_see-more', );
+$sprite-video-name: 'sprite_video';
+$sprite-video-x: 0px;
+$sprite-video-y: 27px;
+$sprite-video-offset-x: 0px;
+$sprite-video-offset-y: -27px;
+$sprite-video-width: 16px;
+$sprite-video-height: 12px;
+$sprite-video-total-width: 24px;
+$sprite-video-total-height: 237px;
+$sprite-video-image: 'sprite.png';
+$sprite-video: (0px, 27px, 0px, -27px, 16px, 12px, 24px, 237px, 'sprite.png', 'sprite_video', );
+$spritesheet-width: 24px;
+$spritesheet-height: 237px;
+$spritesheet-image: 'sprite.png';
+$spritesheet-sprites: ($sprite-clock, $sprite-next-big, $sprite-next, $sprite-photo-red, $sprite-photo, $sprite-play-purple, $sprite-prev-big, $sprite-prev, $sprite-see-more, $sprite-video, );
+$spritesheet: (24px, 237px, 'sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

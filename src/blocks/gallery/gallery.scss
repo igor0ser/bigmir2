@@ -1,4 +1,8 @@
-.gallery {
+﻿.gallery {
+
+	&__list{
+		@include list-style-none;
+	}
 
 	&__item {
 		display: block;

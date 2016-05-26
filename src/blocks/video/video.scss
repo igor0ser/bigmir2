@@ -1,4 +1,8 @@
-.video {
+﻿.video {
+
+	&__list{
+		@include list-style-none;
+	}
 
 	@include media('<desktop') {
 		float: left;

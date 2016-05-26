@@ -20,7 +20,7 @@
 	height: 30px;
 	bottom: 0;
 
-	background: red;
+	background: rgba(255,255,255,0.5); // for IE 9
 	background: linear-gradient(transparent 15%, #fff 40%);
 }
 
