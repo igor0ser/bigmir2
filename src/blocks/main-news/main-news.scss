@@ -1,20 +1,6 @@
 ﻿.main-news {
 	margin-top: $main-news-mt;
 
-	&__list{
-		position: relative;
-
-		&:after {
-			@include after-bl;
-			width: 100%;
-			height: 30px;
-			bottom: 0;
-
-			background: $transparent-gradient-IE9;
-			background: $transparent-gradient;
-		}
-	}
-
 	&__article{
 		display: inline-block;
 		position: relative;
