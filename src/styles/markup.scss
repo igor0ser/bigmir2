@@ -32,13 +32,16 @@
 }
 
 @media only screen and (max-width: $tablet-bp) {
-	.container{
+
+	.container {
 		width: $container-tablet-width;
 	}
-	.news-aside{
+
+	.news-aside {
 		width: 100%;
 	}
-	.news-general{
+
+	.news-general {
 		width: 100%;
 	}
 }

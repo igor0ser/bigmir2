@@ -17,9 +17,11 @@
 		}
 	}
 
-	&__text{
-		&:hover{
+	&__text {
+
+		&:hover {
 			text-decoration: none;
+
 			color: inherit;
 		}
 	}

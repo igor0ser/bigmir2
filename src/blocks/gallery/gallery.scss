@@ -1,5 +1,4 @@
 ﻿.gallery {
-
 	float: left;
 
 	width: $gallery-width;
@@ -10,9 +9,9 @@
 		margin-bottom: $gallery-item-mb;
 	}
 
-	
 	&__figure {
 		position: relative;
+
 		margin: 0;
 
 		&:before {

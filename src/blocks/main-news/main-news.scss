@@ -1,20 +1,19 @@
 ﻿.main-news {
 	margin-top: $main-news-mt;
 
-	&__article{
-		display: inline-block;
+	&__article {
 		position: relative;
+
+		display: inline-block;
+		overflow: hidden;
 
 		width: $main-news-article-width;
 		max-height: $main-news-article-max-height;
 		margin-right: 2.8%;
+		padding-bottom: 15px;
 
 		vertical-align: top;
 		hyphens: auto;
-		overflow: hidden;
-		padding-bottom: 15px;
-
-
 
 		&:last-child {
 			margin-right: 0;

@@ -10,7 +10,7 @@
 	border-bottom: 5px solid $border-color;
 	background: #f7f9fa;
 
-	&:hover &__content{
+	&:hover &__content {
 		text-decoration: none;
 	}
 
@@ -30,7 +30,7 @@
 		width: $slider-item-width;
 		height: $slider-item-height;
 		margin-left: $slider-item-ml;
-		padding:$slider-item-padding;
+		padding: $slider-item-padding;
 
 		&:after {
 			@include after-bl;
@@ -39,9 +39,9 @@
 
 			width: 100%;
 			height: 30px;
-			
+
 			background: $transparent-gradient-IE9; // for IE 9
-			background: $transparent-gradient-slider
+			background: $transparent-gradient;
 		}
 	}
 

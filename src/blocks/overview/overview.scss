@@ -57,12 +57,13 @@
 		margin-right: $overview-item-mr;
 	}
 
-	&__link{
-		&:hover{
+	&__link {
+
+		&:hover {
 			text-decoration: none;
 		}
 
-		&:hover .overview__text{
+		&:hover .overview__text {
 			text-decoration: underline;
 		}
 	}

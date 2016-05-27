@@ -9,7 +9,6 @@
 
 		background: $news-item-bg;
 
-
 		&--with-link &__text:after {
 			@include after-ib;
 
@@ -22,28 +21,32 @@
 			color: #bfbfc0;
 		}
 
-		&--strong{
-			padding: 0;
+		&--strong {
 			margin-bottom: 8px;
+			padding: 0;
+
 			background: none;
 		}
-
 	}
 
-	&__strong-info{
-		display: inline-block;
-		vertical-align: top;
-		width: $news-info-width;
+	&__strong-info {
 		font-weight: bold;
 		line-height: 1.9;
+
+		display: inline-block;
+
+		width: $news-info-width;
+
+		vertical-align: top;
 	}
 
-	&__figure{
+	&__figure {
 		display: inline-block;
-		vertical-align: top;
 
 		width: 100px;
 		margin: $news-image-margin;
+
+		vertical-align: top;
 	}
 
 	&__photo {
@@ -51,16 +54,18 @@
 		height: auto;
 	}
 
-	&__icon{
+	&__icon {
 		display: inline-block;
-		vertical-align: middle;
+
 		margin-right: 3px;
 
-		&--photo{
+		vertical-align: middle;
+
+		&--photo {
 			@include sprite($sprite-photo);
 		}
 
-		&--video{
+		&--video {
 			@include sprite($sprite-video);
 		}
 	}
