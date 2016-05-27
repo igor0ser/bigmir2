@@ -1,11 +1,104 @@
-//colors
+﻿//colors
 $text-color: #333;
 $header-color: #3d76cc;
 $border-color: #c70000;
 $video-color: #6a0099;
+$nav-bg: #d7d8d9;
+$transparent-gradient: linear-gradient(transparent 15%, #fff 55%);
+$transparent-gradient-slider: linear-gradient(transparent, #f7f9fa);
+$transparent-gradient-IE9: rgba(255,255,255,0.5);
+$transparent-bg: rgba(255, 255, 255, .8);
 
 //font sizes
 $main-fs: 14px;
 $big-fs: 18px;
 $header-fs: 24px;
+$slider-header-fs: 30px;
+$small-link-fs: 11px;
 
+//ff
+$main-font: 'PT Sans';
+$header-font: 'PT Serif';
+
+//borders
+$slim-border: 2px solid $text-color;
+$bold-birder: 5px solid $text-color;
+
+//line-height
+
+$lh0: 1.286;
+$lh1: 1.111;
+$lh2: 1.2;
+$lh3: 1.23;
+$lh4: 1.429;
+
+//breakpoints
+$tablet-bp: 1024px;
+
+//containers
+$container-width: 940px;
+$container-tablet-width: 750px;
+$container-margin: 20px auto 68px;
+
+//news-general
+$news-general-width: 65.9574%;
+$news-general-margin: 0 2.1277% 0 0;
+
+//news-list
+$news-list-width: 61.2903%;
+$news-list-margin: 0 3.2258% 0 0;
+
+//news-aside
+$news-aside-width: 31.9149%;
+
+//articles
+$article-photo-width: 34%;
+$article-photo-margin: 0 3% 0 0;
+$article-text-width: 63%;
+$artcle-mt: 19px;
+
+$articles-tablet-width: 45%;
+$articles-tablet-margin: 0 0 20px;
+
+//gallery
+$gallery-width: 35.4839%;
+$gallery-item-mb: 19px;
+
+//main-news
+$main-news-mt: 24px;
+$main-news-article-width: 22.9%;
+$main-news-article-max-height: 210px;
+
+//nav
+$nav-height: 30px;
+
+//news
+$news-margin: -3px 0 19px;
+$news-item-mt: 10px;
+$news-item-pl: 10px;
+$news-item-bg: url(images/bullet.png) top left no-repeat;
+$news-image-width: 100px;
+$news-image-margin: 0 7px 0 0;
+$news-info-width: 272px;
+
+//overview
+$overview-container-width: 5000px;
+$overview-item-width: 140px;
+$overview-item-height: 180px;
+$overview-item-mr: 20px;
+
+//section header
+$header-height: 23px;
+$header-mb: 10px;
+
+//slider
+$slider-image-width: 60.8%;
+$slider-item-width: 35.48%;
+$slider-item-height: 210px;
+$slider-item-ml: 3.5484%;
+$slider-item-padding: 5px 25px 0 0;
+
+//video
+$video-image-width: 46%;
+$video-image-margin: 0 3.3333% 0 0;
+$video-text-width: 50.6667%;

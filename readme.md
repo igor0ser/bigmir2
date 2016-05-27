@@ -26,7 +26,7 @@ Feedback (Yevhen):
 10.  http://prntscr.com/b2c53o - the same as a 7th. - **FIXED**
 11.  http://prntscr.com/b2c5ra - incorrect markup, list should start below the button.
 12.  http://prntscr.com/b2c6d0​ - totally incorrect naming + layout organizing
-13.  Why all includes are in main.scss, instead of just generating separate CSS files and concat them (or even w/o generating) via gulp?
+13.  Why all includes are in main.scss, instead of just generating separate CSS files and concat them (or even w/o generating) via gulp? - **FIXED**
 14.  Lack of variables in SCSS, but in other things CSS part seems to be cute.
 15.  BEM is incorrect [almost] everywhere.
 16.  Include-media for media-queries… It seems this is overhead for that task, plus it’s plugin usage instead of creating own code.

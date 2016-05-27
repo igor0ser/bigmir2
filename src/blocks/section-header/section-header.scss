@@ -1,15 +1,15 @@
-.section-header {
-	height: 23px;
-	margin-bottom: 10px;
+﻿.section-header {
+	height: $header-height;
+	margin-bottom: $header-mb;
 
-	border-bottom: 2px solid $text-color;
+	border-bottom: $slim-border;
 
 	&__text {
 		font-size: $header-fs;
 
 		display: inline-block;
 
-		margin-bottom: -10px;
+		margin-bottom: -$header-mb;
 		padding-right: 8px;
 
 		color: $text-color;

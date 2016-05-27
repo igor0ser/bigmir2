@@ -1,10 +1,40 @@
-.overview {
+﻿.overview {
 	overflow: hidden;
 
 	margin-top: 6px;
 	padding-bottom: 10px;
 
-	border-bottom: 2px solid $text-color;
+	border-bottom: $slim-border;
+
+	&__button {
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		width: 60px;
+		height: 100%;
+
+		background: $transparent-bg;
+
+		&:after {
+			@include after-bl;
+			@include sprite($sprite-next-big);
+
+			top: 42%;
+			left: 50%;
+
+			margin-top: -$sprite-next-big-height/2;
+			margin-left: -$sprite-next-big-width/2;
+		}
+
+		&--prev {
+			left: 0;
+		}
+
+		&--prev:after {
+			@include sprite-position($sprite-prev-big);
+		}
+	}
 
 	&__slider {
 		position: relative;
@@ -12,71 +42,43 @@
 		overflow: hidden;
 
 		padding-left: 80px;
+	}
 
-		&__button {
-			position: absolute;
-			top: 0;
-			right: 0;
-
-			width: 60px;
-			height: 100%;
-
-			background: rgba(255, 255, 255, .8);
-
-			&:after {
-				@include after-bl;
-				@include sprite($sprite-next-big);
-
-				top: 42%;
-				left: 50%;
-
-				margin-top: -$sprite-next-big-height/2;
-				margin-left: -$sprite-next-big-width/2;
-			}
-
-			&--prev {
-				left: 0;
-			}
-
-			&--prev:after {
-				@include sprite-position($sprite-prev-big);
-			}
-		}
-
-		&__container {
-			width: 5000px;
-		}
+	&__container {
+		width: $overview-container-width;
 	}
 
 	&__item {
 		display: block;
 		float: left;
 
-		width: 140px;
-		height: 180px;
-		margin-right: 20px;
+		width: $overview-item-width;
+		height: $overview-item-height;
+		margin-right: $overview-item-mr;
+	}
 
+	&__link{
 		&:hover{
 			text-decoration: none;
 		}
 
-		&:hover &__text{
+		&:hover .overview__text{
 			text-decoration: underline;
 		}
+	}
 
-		&__category {
-			color: $border-color;
-		}
+	&__category {
+		color: $border-color;
+	}
 
-		&__photo {
-			display: block;
+	&__photo {
+		display: block;
 
-			margin-top: 5px;
-			margin-bottom: 3px;
-		}
+		margin-top: 5px;
+		margin-bottom: 3px;
+	}
 
-		&__text {
-			color: $header-color;
-		}
+	&__text {
+		color: $header-color;
 	}
 }

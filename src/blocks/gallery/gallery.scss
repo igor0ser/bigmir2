@@ -1,36 +1,38 @@
 ﻿.gallery {
 
-	&__list{
-		@include list-style-none;
-	}
+	float: left;
+
+	width: $gallery-width;
 
 	&__item {
 		display: block;
 
-		margin-bottom: 19px;
+		margin-bottom: $gallery-item-mb;
+	}
 
-		&__photo-wrapper {
-			position: relative;
+	
+	&__figure {
+		position: relative;
+		margin: 0;
 
-			&:before {
-				@include after-bl;
-				@include sprite($sprite-photo-red);
+		&:before {
+			@include after-bl;
+			@include sprite($sprite-photo-red);
 
-				bottom: 8px;
-				left: 8px;
-			}
+			bottom: 8px;
+			left: 8px;
 		}
+	}
 
-		&__photo {
-			width: 100%;
-			height: auto;
-			margin-bottom: -3px;
-		}
+	&__photo {
+		width: 100%;
+		height: auto;
+		margin-bottom: -3px;
+	}
 
-		&__text {
-			font-size: $big-fs;
-			font-weight: bold;
-			line-height: 1.111;
-		}
+	&__text {
+		font-size: $big-fs;
+		font-weight: bold;
+		line-height: $lh1;
 	}
 }

@@ -1,4 +1,4 @@
-'use strict';
+﻿'use strict';
 
 var gulp = require('gulp');
 var rigger = require('gulp-rigger');
@@ -8,12 +8,13 @@ var autoprefixer = require('autoprefixer');
 var spritesmith = require('gulp.spritesmith');
 var watch= require('gulp-watch');
 var open = require('gulp-open');
+var concat = require('gulp-concat');
 var clean = require('gulp-clean');
 
 var path = {
 	src: {
 		html: 'src/index.html',
-		scss: 'src/main.scss',
+		scss: ['src/styles/mixin.scss','src/styles/variable.scss','src/styles/*.scss', 'src/blocks/**/*.scss'],
 		sprites: 'src/sprites/*.png',
 		styles: 'src/styles/',
 		img: 'src/images/*.*',
@@ -25,8 +26,7 @@ var path = {
 		root: 'build/'
 	},
 	watch: {
-		html: 'src/**/*.html',
-		scss: 'src/**/*.scss'
+		html: 'src/**/*.html'
 	},
 };
 
@@ -40,6 +40,7 @@ gulp.task('html', function () {
 
 gulp.task('css', () => {
 	return gulp.src(path.src.scss)
+			.pipe(concat('main.scss'))
 			.pipe(sass().on('error', sass.logError))
 			.pipe(postcss([autoprefixer({
 				browsers: 'last 2 versions, ie 8-11'
@@ -73,7 +74,7 @@ gulp.task('watch', () => {
 	watch([path.watch.html], function(event, cb) {
 		gulp.start('html');
 	});
-	watch([path.watch.scss], function(event, cb) {
+	watch(path.src.scss, function(event, cb) {
 		gulp.start('css');
 	});
 	watch([path.src.sprites], function(event, cb) {

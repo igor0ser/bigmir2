@@ -1,48 +1,44 @@
-.container {
+﻿.container {
 	@include clearfix;
 
-	width: 940px;
-	margin: 32px auto 68px;
-
-	@include media('<desktop') {
-		width: 750px;
-	}
+	width: $container-width;
+	margin: $container-margin;
 }
 
-.top {
+.news-container {
 	@include clearfix;
 }
 
-.left {
+.news-general {
 	@include clearfix;
 
 	float: left;
 
-	width: 65.9574%;
-	margin-right: 2.1277%;
-
-	@include media('<desktop') {
-		width: 100%;
-	}
-
-
-	.left {
-		width: 61.2903%;
-		margin-right: 3.2258%;
-	}
-
-	.right {
-		width: 35.4839%;
-	}
+	width: $news-general-width;
+	margin: $news-general-margin;
 }
 
-.right {
+.news-lists {
 	float: left;
 
-	width: 31.9149%;
+	width: $news-list-width;
+	margin: $news-list-margin;
+}
 
-	@include media('<desktop') {
+.news-aside {
+	float: left;
+
+	width: $news-aside-width;
+}
+
+@media only screen and (max-width: $tablet-bp) {
+	.container{
+		width: $container-tablet-width;
+	}
+	.news-aside{
 		width: 100%;
 	}
-
+	.news-general{
+		width: 100%;
+	}
 }

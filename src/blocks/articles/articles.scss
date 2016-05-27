@@ -1,16 +1,8 @@
-.articles {
+﻿.articles {
 	margin-top: 45px;
 	padding-bottom: 23px;
 
-	border-bottom: 5px solid $text-color;
-
-	@include media('<desktop') {
-		width: 45%;
-		float: left;
-		margin-top: 0;
-		margin-bottom: 20px;
-	}
-
+	border-bottom: $bold-birder;
 
 	&__header {
 		font-size: $header-fs;
@@ -19,40 +11,54 @@
 
 		margin-bottom: -9px;
 
-		border-bottom: 2px solid $text-color;
+		border-bottom: $slim-border;
 	}
 
-	&__item {
+	&__wrap {
 		@include clearfix;
 
 		display: block;
 
-		margin-top: 19px;
+		margin-top: $artcle-mt;
+	}
 
-		&__photo {
-			border: 1px solid #bfbfc0;
+	&__wrap--with-photo &__text:after {
+		@include after-ib;
+		@include sprite($sprite-photo);
+	}
 
-			display: block;
-			float: left;
+	&__figure {
+		float: left;
 
-			width: 34%;
-			height: auto;
-			margin-right: 3%;
-		}
+		width: $article-photo-width;
+		height: auto;
+		margin: $article-photo-margin;
 
-		&__text {
-			font-size: $big-fs;
-			line-height: 1.111;
+		border: 1px solid #bfbfc0;
+	}
 
-			float: left;
+	&__photo {
+		display: block;
 
-			width: 63%;
-			margin-top: 0;
-		}
+		width: 100%;
+	}
 
-		&--with-photo &__text:after {
-			@include after-ib;
-			@include sprite($sprite-photo);
-		}
+	&__text {
+		font-size: $big-fs;
+		line-height: $lh1;
+
+		float: left;
+
+		width: $article-text-width;
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: $tablet-bp) {
+	.articles {
+		float: left;
+
+		width: $articles-tablet-width;
+		margin: $articles-tablet-margin;
 	}
 }

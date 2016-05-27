@@ -1,41 +1,29 @@
 ﻿.video {
 
-	&__list{
-		@include list-style-none;
-	}
-
-	@include media('<desktop') {
-		float: left;
-
-		width: 45%;
-		margin-right: 10%;
-		margin-bottom: 20px;
-	}
-
-	&__header {
+	&__header-wrap {
 		height: 12px;
 		margin-top: 2px;
 		margin-bottom: 20px;
 
 		text-align: center;
 
-		border-bottom: 2px solid $text-color;
+		border-bottom: $slim-border;
+	}
 
-		&__text {
-			font-size: $big-fs;
-			font-weight: bold;
+	&__header {
+		font-size: $big-fs;
+		font-weight: bold;
 
-			display: inline-block;
+		display: inline-block;
 
-			margin-bottom: -20px;
-			padding: 0 5px;
+		margin-bottom: -20px;
+		padding: 0 5px;
 
-			text-align: center;
-			text-transform: uppercase;
+		text-align: center;
+		text-transform: uppercase;
 
-			color: #6a0099;
-			background: #fff;
-		}
+		color: #6a0099;
+		background: #fff;
 	}
 
 	&__item {
@@ -46,37 +34,42 @@
 		display: block;
 
 		margin-bottom: 11px;
+	}
 
-		&__image {
-			float: left;
+	&__figure{
+		float: left;
+		position: relative;
 
-			width: 46%;
-			display: block;
-			height: auto;
-			margin-right: 3.3333%;
-		}
+		width: $video-image-width;
+		display: block;
+		height: auto;
+		margin:$video-image-margin;
 
 		&:before {
 			@include after-bl;
 			@include sprite($sprite-play-purple);
 
-			bottom: 3px;
+			bottom: 7px;
 			left: 4px;
 		}
-
-
-
-		&__text {
-			font-weight: bold;
-			line-height: 1.429;
-
-			float: left;
-
-			width: 50.6667%;
-			margin-top: -2px;
-			padding-left: 2px;
-		}
 	}
+
+	&__image{
+		width: 100%;
+	}
+
+	&__text {
+		font-weight: bold;
+		line-height: $lh4;
+
+		float: left;
+
+		width: $video-text-width;
+		margin-top: -2px;
+		padding-left: 2px;
+	}
+
+
 
 	&__see-more {
 		font-size: $big-fs;
@@ -97,5 +90,15 @@
 		margin-top: 4px;
 
 		border-bottom: 5px solid $text-color;
+	}
+}
+
+@media only screen and (max-width: $tablet-bp) {
+	.video {
+		float: left;
+
+		width: 45%;
+		margin-right: 10%;
+		margin-bottom: 20px;
 	}
 }

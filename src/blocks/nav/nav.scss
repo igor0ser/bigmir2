@@ -1,12 +1,10 @@
 ﻿.nav {
-	@include list-style-none;
-
 	font-size: $big-fs;
-	line-height: 30px;
+	line-height: $nav-height;
 
 	display: block;
 
-	background: #d7d8d9;
+	background: $nav-bg;
 
 	&__item {
 		display: inline-block;
